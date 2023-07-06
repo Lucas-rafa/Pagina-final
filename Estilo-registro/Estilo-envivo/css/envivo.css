@@ -1,0 +1,34 @@
+.chart {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border-radius: 50%;
+    background-color: lightgray;
+  }
+  
+  .slice {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 50%;
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+    background-color: teal;
+    transform: rotate(var(--percentage));
+  }
+  
+  .slice:nth-child(1) {
+    --percentage: 0deg;
+  }
+  
+  .slice:nth-child(2) {
+    --percentage: 90deg;
+  }
+  
+  .slice:nth-child(3) {
+    --percentage: 180deg;
+  }
+  
+  .slice:nth-child(4) {
+    --percentage: 270deg;
+  }
+  
