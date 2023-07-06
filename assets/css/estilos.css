@@ -75,7 +75,7 @@ main{
 
 .caja__trasera button:hover{
     background: #fff;
-    color: #46A2FD;
+    color: purple;
 }
 
 /*Formularios*/
@@ -126,7 +126,7 @@ main{
     background: purple;
     font-weight: 600;
     cursor: pointer;
-    color: purple;
+    color: white;
     outline: none;
 }
 
