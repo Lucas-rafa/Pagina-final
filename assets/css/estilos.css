@@ -35,7 +35,7 @@ main{
     justify-content: center;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    background-color: rgba(0, 128, 255, 0.5);
+    background-color: rgba(223, 8, 187, 0.5);
 
 }
 
@@ -126,7 +126,7 @@ main{
     background: #46A2FD;
     font-weight: 600;
     cursor: pointer;
-    color: white;
+    color: purple;
     outline: none;
 }
 
