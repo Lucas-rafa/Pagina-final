@@ -20,7 +20,7 @@ body {
     align-items: center;
     justify-content: space-between;
     height: 63px;
-    background: #171717;
+    background: #524d4de0;
     position: sticky;
     top: 0;
     width: 100%;
@@ -33,7 +33,7 @@ body {
 }
 
 .logo {
-    margin-left: 30px;
+    margin-left: 10px;
 }
 
 .logo a {
