@@ -55,15 +55,15 @@
                     </form>
 
                     <!--Register-->
-                    <form action="./registro-php/index.php" class="formulario__register">
+                    <form action="." method="get" class="formulario__register">
                         <h2>Regístrarse</h2>
-                        <input type="text" placeholder="Nombre completo">
-                        <input type="text" placeholder="Correo Electronico">
-                        <input type="text" placeholder="Usuario">
-                        <input type="password" placeholder="Contraseña">
+                        <input type="text" name="nombre" placeholder="Nombre completo">
+                        <input type="text" name="correo" placeholder="Correo Electronico">
+                        <input type="text" name="usuario" placeholder="Usuario">
+                        <input type="password" name="contrasena" placeholder="Contraseña">
                         <form action="procesar_registro.php" class="formulario__register" method="post">
-                        <button type="submit">Regístrarse</button>
-</form>
+                        <button type="submit" name="btn-r-s">Regístrarse</button>
+                    </form>
 
                     </form>
                 </div>
