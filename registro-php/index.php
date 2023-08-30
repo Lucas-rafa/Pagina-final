@@ -6,7 +6,7 @@ $usuario = $_POST["usuario"];
 $contrasena = $_POST["contrasena"];
 
 // Conectar a la base de datos (reemplaza con tus propios detalles de conexión)
-$conexion = new mysqli("localhost", "angel", "Kurokonoba95", "nombre_de_la_base");
+$conexion = new mysqli("localhost", "angel", "Kurokonoba95", "agro_tec");
 
 // Verificar la conexión
 if ($conexion->connect_error) {
