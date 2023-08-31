@@ -18,7 +18,7 @@ $altura = $_POST["altura"];
 $peso = $_POST["peso"];
 
 // Insertar los datos en la base de datos
-$insert_query = "INSERT INTO informacion_personal (nombre, apellidos, direccion, telefono, edad, altura, peso)
+$insert_query = "INSERT INTO gente (nombre, apellidos, direccion, telefono, edad, altura, peso)
                  VALUES ('$nombre', '$apellidos', '$direccion', '$telefono', $edad, $altura, $peso)";
 
 if ($conexion->query($insert_query) === TRUE) {
