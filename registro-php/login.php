@@ -12,7 +12,7 @@ if(isset($_REQUEST["btn-s"])){
         $_SESSION["start"] = $usuario["nombre"];
   
       }
-      header("location:../home");
+      header("location:../index");
     }else{
       echo "usuario no encontrado";
     }
