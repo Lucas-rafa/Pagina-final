@@ -1,9 +1,9 @@
 <?php
 if(isset($_REQUEST["btn-s"])){
     $correo = $_REQUEST["correo"];
-    $contraseña = $_REQUEST["contraseña"];
+    $contraseña = $_REQUEST["contrasena"];
   
-    $consulta = "SELECT nombre, correo, contraseña FROM usuarios WHERE correo = '$correo' AND contraseña = '$contraseña' ";
+    $consulta = "SELECT nombre, correo, contraseña FROM usuarios WHERE correo = '$correo' AND contrasena = '$contraseña' ";
     $response = mysqli_query($conex, $consulta);
     if($response){
       session_destroy();
