@@ -10,7 +10,7 @@ if(isset($_REQUEST["btn-s"])){
       session_start();
       foreach ($response as $usuario ) {
         $_SESSION["start"] = $usuario["nombre"];
-  
+  a
       }
       header("location:../home");
     }else{
