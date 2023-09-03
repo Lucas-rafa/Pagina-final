@@ -1,13 +1,10 @@
-
-
-
-*{
+* {
     margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
-   vertical-align: baseline;
-   scroll-behavior: smooth;
+    vertical-align: baseline;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -60,10 +57,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
-}
-
-.header {
     background: url(img/campo3.png) no-repeat center;
     background-size: cover;
 }
@@ -80,7 +73,7 @@ p {
     margin-bottom: 40px;
     font-size: 18px;
     color: #fff;
-    padding: 0 100px;
+    padding: 0 20px;
 }
 
 .btn {
@@ -95,7 +88,6 @@ p {
 
 .btn:hover {
     background: none;
-    
 }
 
 .btn-home {
@@ -106,36 +98,38 @@ p {
     margin: 0 10px;
 }
 
-
 .content {
-    height: 100vh;
+    height: auto; /* Cambiado de 100vh a auto */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px; /* Agregado para mayor espacio en dispositivos pequeños */
 }
 
 .sau {
     padding: 30px;
-    background: #1f1d1d
+    background: #1f1d1d;
 }
 
 .box-container {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
-
+    margin-top: 20px; /* Agregado espacio entre cajas en dispositivos pequeños */
 }
 
 .box-container .box {
-    height: 11rem;
-    width: 17rem;
+    height: auto; /* Cambiado de 11rem a auto */
+    width: 90%; /* Cambiado de 17rem a un ancho adaptable */
+    max-width: 300px; /* Agregado para limitar el ancho máximo */
     background: #101010;
     text-align: center;
     border-radius: 1rem;
-    box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
-    margin: 2rem;   
+    box-shadow: 0 .3rem 5rem rgba(0, 0, 0, .5);
+    margin: 20px; /* Cambiado de 2rem a 20px */
+    padding: 20px; /* Agregado para espacio interno */
 }
 
 .box-container .box i {
@@ -148,13 +142,11 @@ p {
     background: #9c27b0;
     font-size: 2rem;
     margin: 1rem 0;
-
 }
 
 .box-container .box h3 {
     font-size: 20px;
     color: #9c27b0;
-
 }
 
 .box-container .box p {
@@ -173,33 +165,27 @@ p {
     text-align: center;
 }
 
-
 .contact {
     padding-top: 20px;
     background: #171717;
     padding-bottom: 0;
 }
 
-
 @media (max-width: 768px) {
-
     .title {
-        margin-bottom: 0;
         font-size: 40px;
     }
 
     .sau {
-        height: 100vh;
+        height: auto; /* Cambiado de 100vh a auto */
     }
 
     .navbar {
         display: none;
     }
-   
-    
+
+    .box-container .box {
+        width: 90%;
+        max-width: 400px; /* Ajustado el ancho máximo */
+    }
 }
-
-
-
-
-
