@@ -34,8 +34,8 @@ label {
 
 /* Estilo para el campo de entrada */
 input[type="text"] {
-    width: 100%;
-    padding: 9px;
+    width: 90%;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
     margin-bottom: 15px;
