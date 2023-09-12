@@ -26,23 +26,22 @@ if (isset($_POST['valor_cm'])) {
     }
 }
 $sql = "SELECT * FROM valores_cm";
-$result = $conn->query($sql);
+    $result = $conn->query($sql);
 
-if ($result->num_rows > 0) {
-    echo "<table>";
-    echo "<tr><th>ID</th><th>Valor en cm</th></tr>";
+    if ($result->num_rows > 0) {
+        echo "<table>";
+        echo "<tr><th>ID</th><th>Valor en cm</th></tr>";
 
-    while ($row = $result->fetch_assoc()) {
-        echo "<tr>";
-        echo "<td>" . $row["id"] . "</td>";
-        echo "<td>" . $row["valor_cm"] . "</td>";
-        echo "</tr>";
-    }
+        while ($row = $result->fetch_assoc()) {
+            echo "<tr>";
+            echo "<td>" . $row["id"] . "</td>";
+            echo "<td>" . $row["valor_cm"] . "</td>";
+            echo "</tr>";
+        }
 
-    echo "</table>";
-} else {
-    echo "No hay valores en la tabla.";
-}
+        echo "</table>";
+    } else {
+        echo "No hay valores en la tabla.";}
 // Cerrar la conexión a la base de datos
 $conn->close();
 ?>
