@@ -1,9 +1,9 @@
 <?php
 // Conexión a la base de datos ficticia (reemplaza con tus propios datos)
 $servername = "localhost";
-$username = "usuario";
-$password = "contraseña";
-$dbname = "nombre_de_la_base_de_datos";
+$username = "angel";
+$password = "Kurokonoba95";
+$dbname = "lupoli";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
