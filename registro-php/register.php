@@ -17,7 +17,6 @@ if(isset($_REQUEST["btn-r-s"])){
     $insert_query = "INSERT INTO usuarios (nombre, correo, usuario, contrasena) VALUES ('$nombre', '$correo', '$usuario', '$contrasena')";
     if ($conexion->query($insert_query) === TRUE) {
         echo "Registro exitoso";
-        header("location:../index.html");
     } else {
         echo "Error al registrar: " . $conexion->error;
     }
