@@ -1,7 +1,6 @@
 <?php
 // Obtener los datos del formulario de inicio de sesión
 if (isset($_POST["btn-login"])) {
-    echo "hola";
     $correo = $_POST["correo"];
     $contrasena = $_POST["contrasena"];
 
