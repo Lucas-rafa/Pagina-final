@@ -14,7 +14,7 @@ $year_expiracion = $_POST['selectYear'];
 $ccv = $_POST['inputCCV'];
 
 // SQL para insertar datos en la tabla (ajusta el nombre de la tabla y las columnas según tu estructura)
-$sql = "INSERT INTO tarjetas (numero_tarjeta, nombre, mes_expiracion, year_expiracion, ccv) 
+$sql = "INSERT INTO tarjeta_credito (numero_tarjeta, nombre, mes_expiracion, year_expiracion, ccv) 
         VALUES ('$numero_tarjeta', '$nombre', '$mes_expiracion', '$year_expiracion', '$ccv')";
 
 if ($conexion->query($sql) === TRUE) {
