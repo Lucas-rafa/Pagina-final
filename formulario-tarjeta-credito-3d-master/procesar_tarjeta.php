@@ -5,7 +5,7 @@
 if ($conexion->conexionect_error) {
     die("Error en la conexión a la base de datos: " . $conexion->conexionect_error);
 }
-echo "holaaa ";
+
 
 if(isset($_REQUEST["btn-t"])){
     // Recibir datos del formulario
@@ -20,6 +20,7 @@ if(isset($_REQUEST["btn-t"])){
     
     if ($conexion->query($sql)) {
         echo "Datos de tarjeta almacenados correctamente.";
+        header("location:../index.html");
     } else {
         echo "Error al almacenar los datos de la tarjeta: " . $conexion->error;
     }
