@@ -1,11 +1,11 @@
 <?php
+ require_once("../conexion/conexion.php");
 // Obtener los datos del formulario de inicio de sesión
 if (isset($_POST["btn-login"])) {
     $correo = $_POST["correo"];
     $contrasena = $_POST["contrasena"];
 
     // Conectar a la base de datos (reemplaza con tus propios detalles de conexión)
-    $conexion = new mysqli("localhost", "angel", "Kurokonoba95", "agro_tec");
 
     // Verificar la conexión
     if ($conexion->connect_error) {

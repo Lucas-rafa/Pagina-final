@@ -2,7 +2,7 @@
 // Obtener los datos del formulario de registro
 
 // Conectar a la base de datos (reemplaza con tus propios detalles de conexión)
-$conexion = new mysqli("localhost", "angel", "Kurokonoba95", "agro_tec");
+require_once("../conexion/conexion.php");
 
 // Verificar la conexión
 if ($conexion->connect_error) {

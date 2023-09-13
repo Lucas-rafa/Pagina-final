@@ -1,15 +1,9 @@
 <?php
-// Conexión a la base de datos (reemplaza con tus propios valores)
-$servername = "localhost";
-$username = "angel";
-$password = "Kurokonoba95";
-$database = "tarjetas";
 
-$conn = new mysqli($servername, $username, $password, $database);
+ require_once("../conexion/conexion.php");
 
-// Verificar la conexión
-if ($conn->connect_error) {
-    die("Error en la conexión a la base de datos: " . $conn->connect_error);
+if ($conexion->conexionect_error) {
+    die("Error en la conexión a la base de datos: " . $conexion->conexionect_error);
 }
 
 // Recibir datos del formulario
@@ -23,12 +17,12 @@ $ccv = $_POST['inputCCV'];
 $sql = "INSERT INTO tarjetas (numero_tarjeta, nombre, mes_expiracion, year_expiracion, ccv) 
         VALUES ('$numero_tarjeta', '$nombre', '$mes_expiracion', '$year_expiracion', '$ccv')";
 
-if ($conn->query($sql) === TRUE) {
+if ($conexion->query($sql) === TRUE) {
     echo "Datos de tarjeta almacenados correctamente.";
 } else {
-    echo "Error al almacenar los datos de la tarjeta: " . $conn->error;
+    echo "Error al almacenar los datos de la tarjeta: " . $conexion->error;
 }
 
 // Cerrar la conexión
-$conn->close();
+$conexion->close();
 ?>
