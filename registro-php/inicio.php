@@ -19,6 +19,7 @@ if (isset($_POST["btn-login"])) {
     if ($resultado->num_rows === 1) {
         // El usuario se autenticó correctamente
         echo "Inicio de sesión exitoso";
+        header("location:../index.html");
         // Puedes redirigir al usuario a una página de bienvenida aquí
     } else {
         // Las credenciales son incorrectas
